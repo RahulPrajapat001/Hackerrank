@@ -31,3 +31,4 @@ Sample Output 1
 14
 -7*/
 
+18
