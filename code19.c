@@ -25,3 +25,18 @@ Sample Input 1
 Sample Output 1
 
 7*/
+#include <stdio.h>
+
+int main() {
+
+int num,i,a;
+
+scanf("%d %d", &num, &i);
+
+a=(num|1<<i);
+
+printf("%d",a);
+
+return 0;
+
+}
