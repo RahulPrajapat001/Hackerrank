@@ -67,7 +67,7 @@ int main() {
     if (bill <= 1200) {
         bill = bill * 0.9;  // 10% discount
     }
-     printf("The electricity bill is: %.2f.\n", bill);
+     printf("The electricity bill is: %.2f.\n", bill) :
     
     return 0;
 }
