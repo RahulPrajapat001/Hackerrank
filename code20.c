@@ -26,3 +26,18 @@ Sample Output 1
 
 21*/
 
+#include <stdio.h>
+
+int main() {
+
+int num,i,a;
+
+scanf("%d %d", &num,&i);
+
+a=(num & ~(1<<i));
+
+printf("%d",a);
+
+return 0;
+
+}
