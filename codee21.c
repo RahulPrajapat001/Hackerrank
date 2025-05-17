@@ -25,3 +25,17 @@ Sample Input 1
 Sample Output 1
 
 4*/
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    
+    scanf("%d", &n);
+    scanf("%d", &i);
+
+    int mask = 1 << i;
+    n = n ^ mask;
+    printf("%d\n", n);
+
+    return 0;
+}
