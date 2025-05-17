@@ -67,3 +67,49 @@ Sample Input 4
 Sample Output 4
 
 Invalid Figure*/
+#include <stdio.h>
+#include <stdbool.h>
+#include <math.h>
+
+
+int main() {
+    int n, a, b, c, d, A, B, C, D;
+    scanf("%d", &n);
+
+    if (n == 0) {
+        printf("Circle\n");
+    } else if (n == 3) {
+        scanf("%d %d %d %d %d %d", &a, &b, &c, &A, &B, &C);
+        if (a <= 0 || b <= 0 || c <= 0 || A < 0 || A >= 180 || B < 0 || B >= 180 || C < 0 || C >= 180 || A+B+C!=180) {
+            printf("Invalid Figure\n");
+        } else if (a == b && b == c && A == 60 && B == 60 && C == 60) {
+            printf("Equilateral Triangle\n");
+        } else if ((a == b && A == B) || (a == c && A == C) || (b == c && B == C)) {
+            printf("Isosceles Triangle\n");
+        } else {
+            printf("Scalene Triangle\n");
+        }
+    } else if (n == 4) {
+        scanf("%d %d %d %d %d %d %d %d", &a, &b, &c, &d, &A, &B, &C, &D);
+        if (a <= 0 || b <= 0 || c <= 0 || d <= 0 || A < 0 || A >= 180 || B < 0 || B >= 180 || C < 0 || C >= 180 || D < 0 || D >= 180 || A+B+C+D!=360) {
+            printf("Invalid Figure\n");
+        } else if (a == b && b == c && c == d && A == 90 && B == 90 && C == 90 && D == 90) {
+            printf("Square\n");
+        } else if (a == c && b == d && A == 90 && B == 90 && C == 90 && D == 90) {
+            printf("Rectangle\n");
+        } else if (a == b && b == c && c == d && A != 90) {
+            if(A==C && B==D)
+                printf("Rhombus\n");
+            else
+                printf("Invalid Figure\n");
+        } else if (a == c && b == d && A == C && B == D) {
+            printf("Parallelogram\n");
+        } else {
+            printf("Invalid Figure\n");
+        }
+    } else {
+        printf("Invalid Figure\n");
+    }
+
+    return 0;
+}
