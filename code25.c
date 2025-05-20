@@ -21,3 +21,20 @@ Sample Input 1
 Sample Output 1
 
 4*/
+
+#include <stdio.h>
+
+int main() {
+    int n, count = 0;
+
+    scanf("%d", &n);
+
+    
+    if (n & 1) ++count;        
+    if (n & 2) ++count;        
+    if (n & 4) ++count;        
+    if (n & 8) ++count;        
+    printf("%d\n", count);
+
+    return 0;
+}
