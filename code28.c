@@ -26,3 +26,27 @@ Sample Input 1
 Sample Output 1
 
 1*/
+
+
+#include <stdio.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    int x;
+    scanf("%d", &x);
+    
+     if ( x <= 0){
+        printf("-1");
+    return 0;}
+    
+    if ( (x & (x-1)) == 0 ){
+        printf("1");
+    }
+
+    else {
+        printf("-1");
+    }
+        
+    return 0;
+}
