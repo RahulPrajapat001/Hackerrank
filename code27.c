@@ -22,3 +22,14 @@ Sample Input 1
 Sample Output 1
 
 2*/
+#include <stdio.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    int x;
+    scanf("%d",&x);
+        
+    printf("%d", x & -x);
+    return 0;
+}
