@@ -21,3 +21,20 @@ Sample Input 1
 Sample Output 1
 
 No*/
+#include <stdio.h>
+
+int main() {
+    int a, b;
+
+    scanf("%d %d", &a, &b);
+
+    int xor = a ^ b;
+
+    if (xor > 0 && (xor & (xor - 1)) == 0) {
+        printf("Yes\n");
+    } else {
+        printf("No\n");
+    }
+
+    return 0;
+}
