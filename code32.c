@@ -21,3 +21,15 @@ Sample Input 1
 Sample Output 1
 
 2*/
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    scanf("%d %d", &a, &b);
+
+    int sign = ((a-b) >> 31 &1);
+    int max = a * (1-sign) + b*sign ; 
+
+    printf("%d\n", max);
+    return 0;
+}
