@@ -31,5 +31,5 @@ int main() {
     scanf("%d",&x);
         
     printf("%d", x & -x);
-    return 0;
+    return 0; 
 }
