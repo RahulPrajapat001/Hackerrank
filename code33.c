@@ -24,3 +24,20 @@ Sample Input 1
 Sample Output 1
 
 Negative*/
+#include <stdio.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    int a,n;
+    scanf("%d",&a);
+    
+    n = a >>31;
+    if(n== 0 | n== 1){
+        printf("Positive");
+    }
+    else{
+        printf("Negative");
+    }
+    return 0;
+}
