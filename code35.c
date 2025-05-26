@@ -21,3 +21,17 @@ Sample Input 1
 Sample Output 1
 
 21*/
+#include <stdio.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    int a;
+    scanf("%d", &a);
+    int n=(a<<3)-a;
+    
+    printf("%d",n);
+    
+    
+    return 0;
+}
