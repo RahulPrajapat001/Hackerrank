@@ -21,3 +21,15 @@ Sample Input 1
 Sample Output 1
 
 8*/
+
+#include <stdio.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    int a,b;
+    scanf("%d %d",&a,&b);
+    
+    printf("%d", a & b);
+    return 0;
+}
