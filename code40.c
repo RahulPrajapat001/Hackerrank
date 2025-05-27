@@ -20,4 +20,19 @@ Sample Input 1
 15
 Sample Output 1
 
-2 4 6 8 10 12 14*/ .
+2 4 6 8 10 12 14*/ 
+#include <stdio.h>
+
+int main() {
+    int N;
+    scanf("%d", &N);
+
+    if (N >= 0 && N <= 1000000) {
+        for (int i = 2; i <= N; i += 2) {
+            printf("%d ", i); 
+        }
+        printf("\n"); 
+    } 
+
+    return 0;
+}
