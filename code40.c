@@ -20,4 +20,4 @@ Sample Input 1
 15
 Sample Output 1
 
-2 4 6 8 10 12 14*/
+2 4 6 8 10 12 14*/ .
