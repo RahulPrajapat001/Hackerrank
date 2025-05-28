@@ -34,8 +34,8 @@ int main() {
         for (int i = 1; i <= N; i += 2) {
             printf("%d ", i);
         }
-        printf("\n"); 
+        printf("\n") ; 
     }
 
-    return 0;
+    return 0 ;
 }
