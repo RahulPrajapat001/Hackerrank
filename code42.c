@@ -23,3 +23,19 @@ Sample Output 1
 1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 */
 
 
+#include <stdio.h>
+
+int main() {
+    int N;
+
+    scanf("%d", &N);
+
+    if (N >= 0 && N <= 1000000) {
+        for (int i = 1; i <= N; i += 2) {
+            printf("%d ", i);
+        }
+        printf("\n"); 
+    }
+
+    return 0;
+}
