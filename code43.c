@@ -21,3 +21,19 @@ Sample Input 1
 Sample Output 1
 
 1 4 9 16 25 36 49 64 81 100 121 144*/
+#include <stdio.h>
+
+int main() {
+    int N;
+    scanf("%d", &N);
+
+    if (N >= 0 && N <= 10000) {
+
+        for (int i = 1; i <= N; i++) {
+            printf("%d ", i * i); 
+        }
+        
+    }
+
+    return 0;
+}
