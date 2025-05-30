@@ -21,3 +21,20 @@ Sample Input 1
 Sample Output 1
 
 1 8 27*/
+#include <stdio.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    int N;
+    scanf("%d",&N);
+    
+    for(int i=1; i<=N ; i++)
+    {
+        printf("%d ",(i*i)*i );
+    }
+    
+    
+    return 0;
+}
+
