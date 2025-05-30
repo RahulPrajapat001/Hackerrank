@@ -24,3 +24,21 @@ Sample Output 1
 
 -2 -4 -6 -8*/
 
+#include <stdio.h>
+
+int main() {
+    int n, x;
+    
+    scanf("%d %d", &n, &x);
+    
+    for(int i = 1; i <= n; i++) {
+        printf("%d", x * i);
+        
+        if(i < n) {
+            printf(" ");
+        }
+    }
+    
+    
+    return 0;
+}
