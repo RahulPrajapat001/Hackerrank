@@ -21,3 +21,29 @@ Sample Input 1
 Sample Output 1
 
 3 5 6 9 10*/
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    int n;
+    scanf("%d", &n);
+    for(int i=1; i<=n; ++i)
+    {
+      int x,y,z;
+        x= (i%3 == 0);
+        y= (i%5 == 0);
+        z= x^y;
+        
+      if(z){
+          printf("%d ",i);
+      }
+          
+    }
+    
+    return 0;
+}
