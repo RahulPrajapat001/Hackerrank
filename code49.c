@@ -21,3 +21,25 @@ Sample Input 1
 Sample Output 1
 
 1 -2*/
+
+#include <stdio.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    int n ;
+    
+    scanf("%d",&n);
+    
+    for(int i=1; i<=n; ++i){
+      
+        int x = i;
+        if(i%2 == 0){
+          x= -i;
+       }
+    
+        printf("%d ", x);
+    }
+    
+    return 0;
+}
