@@ -22,3 +22,22 @@ Sample Output 1
 
 1 4*/
 
+#include<stdio.h>
+int main(){
+    
+    int n;
+    int j=0;
+    scanf("%d",&n);
+    
+    for(int i=1; j<n ; ++i)
+    {
+    int a = (i*i);
+    if( a%3 != 0){
+        printf("%d ",a);
+        ++j ;   
+    }
+    }
+    
+    
+    return 0;
+}
