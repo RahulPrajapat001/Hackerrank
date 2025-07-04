@@ -41,5 +41,5 @@ int main() {
         printf("%d ", x);
     }
     
-    return 0         ;
+    return 0 ;
 }
